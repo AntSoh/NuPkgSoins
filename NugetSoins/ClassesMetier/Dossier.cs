@@ -111,6 +111,16 @@ namespace ClassesMetier
         }
 
         /// <summary>
+        /// retourne la derniere prestation 
+        /// </summary>
+        /// <returns></returns>
+        public Prestation DernierePrestation()
+        {
+            int i = this.MesPrestations.Count;
+            return this.MesPrestations[i];
+        }
+
+        /// <summary>
         /// Retourne le nombre de jours de soins comptabilisés pour le dossier. Il ne s'agit pas ici de déterminer
         ///  le nombre de prestations attachées à un dossier, mais le nombre de jours pour lesquels au moins 
         /// une prestation a été réalisée.
